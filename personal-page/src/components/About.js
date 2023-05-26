@@ -16,7 +16,7 @@ export default function About() {
             I'm an Afghan American with dreams of becoming a software engineer.
             Presently, I work as a software engineer intern at North Atlantic
             Industries in Bohemia, NY. I have previous experience as a mobile
-            frontend developer and have been a coding instructor as well! When
+            frontend developer and have been both a coding instructor and a TA as well! When
             I'm not coding, you can find me on the saddle or behind a good book!
           </p>
           <div className="flex justify-center">

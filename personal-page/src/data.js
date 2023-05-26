@@ -99,22 +99,22 @@ export const projects = [
     {
         title: "Host4Me",
         subtitle: "Flutter, Python, Flask, Firebase",
-        description: "Flutter app to allow international students to find suitable host families. Hosted on App Store and Google Play.",
-        image: "../public/host4me.png",
+        description: "A Flutter app to allow international students to find suitable host families. Hosted on App Store and Google Play.",
+        image: process.env.PUBLIC_URL + "/host4me.png",
         link: "https://github.com/rparsa49/host4me",
     },
     {
         title: "Secret Chat",
         subtitle: "Python, Flask, SocketIO, HTML/CSS",
         description: "A web application for local chatting over a LAN network.",
-        image: "../public/secretchat.png",
+        image: process.env.PUBLIC_URL + "/secretchat.png",
         link: "https://github.com/rparsa49/secret_chat",
     },
     {
         title: "Portfolio Page",
         subtitle: "React, Tailwind, HTML5",
         description: "A virtual portfolio I created for myself to display my work and acheivements. This was also my first major delve into using React!",
-        image: "../public/portfolio.png",
+        image: process.env.PUBLIC_URL + "/portfolio.png",
         link: "https://github.com/rparsa49/personal-page",
     },
 ];
