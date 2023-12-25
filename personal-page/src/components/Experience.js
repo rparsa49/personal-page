@@ -79,23 +79,25 @@ export default function Experience() {
             <p>Bachelor of Science in Computer Science (GPA: 4.0)</p>
             <ul>• Transferred from Stony Brook University</ul>
             <ul>• Honors College</ul>
+            <ul>• Minor in Mathematics</ul>
             <ul>• Deans List (All Semesters)</ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             iconStyle={{ background: "#9ca3af", color: "#fff" }}
             icon={<FaBriefcase />}
-            date="Jan. 2023 - May 2023"
+            date="Jan. 2023 - Dec 2023"
           >
             <h3>Adelphi University</h3>
-            <p>CSC 171 TA</p>
+            <p>Undergraduate TA (Math/CS Department)</p>
             <ul>
-              • Assisted professor in leading laboratory classes 3 times a week
-              with 30 students.
+              • TA'ed for two courses across two semesters, CSC 171 and MTH 225
+              with a total of 60 students across both courses.
             </ul>
             <ul>
-              • Aided with debugging students’ Python code and guiding them
-              throughout the semester with individualized attention.
+              • Assisted professor in leading weekly laboratory classes for 30
+              students, offering individualized guidance on Python code
+              debugging and semester-long support.
             </ul>
             <ul>
               • Swiftly graded and provided feedback for all students on a
@@ -107,13 +109,25 @@ export default function Experience() {
             className="vertical-timeline-element--work"
             iconStyle={{ background: "#9ca3af", color: "#fff" }}
             icon={<FaBriefcase />}
-            date="May 2023 - Present"
+            date="June 2023 - Present"
           >
             <h3>North Atlantic Industries</h3>
             <p>Software Engineer Intern</p>
             <ul>
-              • Create and test GUI programs for circuit boards using C, C++,
-              and C#.
+              • Created an automated testing script and pipeline for the Vx
+              Works 6.9 and 7 SSK using Python and Jenkins. Tests the SSK
+              against both VSB and Image creation and compilation.
+            </ul>
+            <ul>
+              • Led the design and implementation of two full-stack
+              React/Tailwind applications, specifically tailored for in-house
+              AI-powered projects.
+            </ul>
+            <ul>
+              • Developed a pipelined parser for the SSK1 and SSK2 with Python
+              to populate an internal function database, containing function
+              names, return types, parameters, and function code with the use of
+              the pyodbc library.
             </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
