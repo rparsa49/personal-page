@@ -71,7 +71,7 @@ export const coursesData = [
     courseCode: "CSC 301",
     description:
       "Introduction to the C and C++ programming languages, including syntax, data types, and basic programming concepts.",
-    grade: "In Progress",
+    grade: "A+",
     university: "Adelphi University",
   },
 ];

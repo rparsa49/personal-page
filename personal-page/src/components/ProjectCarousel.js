@@ -16,7 +16,7 @@ const ProjectCarousel = () => {
         transitionTime={500}
         emulateTouch={true}
         swipeable={true}
-        showArrows={false}
+        showArrows={true}
       >
         {projects.map((project, index) => (
           <div key={index}>

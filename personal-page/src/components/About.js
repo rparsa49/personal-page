@@ -31,7 +31,7 @@ export default function About() {
             <pre data-prefix=">" className="text-warning">
               <code>An Afghan American with dreams of</code>
             </pre>
-            <pre data-prefix="">
+            <pre data-prefix="" className="text-warning">
               <code>becoming a software engineer.</code>
             </pre>
             <pre data-prefix=">" className="text-warning">
