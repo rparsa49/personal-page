@@ -79,7 +79,7 @@ export default function Experience() {
             <p>Bachelor of Science in Computer Science (GPA: 4.0)</p>
             <ul>• Transferred from Stony Brook University</ul>
             <ul>• Honors College</ul>
-            <ul>• Minor in Mathematics</ul>
+            <ul>• Minor in Statistics and Data Analytics</ul>
             <ul>• Deans List (All Semesters)</ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement

@@ -86,10 +86,10 @@ export const upcomingcoursesData = [
     university: "Adelphi University",
   },
   {
-    title: "Differential Equations",
-    courseCode: "MTH 244",
+    title: "Graduate Capstone in Mathematics",
+    courseCode: "MTH 695",
     description:
-      "Introduction to differential equations and their applications in science and engineering.",
+      "A graduate level industry consulting course, in which I coordinate with a group of students to complete various real-world technical projects through a consulting environment.",
     grade: "In Progress",
     university: "Adelphi University",
   },
