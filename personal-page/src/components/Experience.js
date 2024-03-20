@@ -27,6 +27,7 @@ export default function Experience() {
             <p>Bachelor of Science in Computer Science</p>
             <ul>• Women in Science and Engineering (WISE) Honors Program</ul>
             <ul>• Dean's List (All Semesters)</ul>
+            <ul>• Equestrian Team Competition Rider</ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -81,6 +82,7 @@ export default function Experience() {
             <ul>• Honors College</ul>
             <ul>• Minor in Statistics and Data Analytics</ul>
             <ul>• Deans List (All Semesters)</ul>
+            <ul>• Equestrian Team Competition Rider</ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
