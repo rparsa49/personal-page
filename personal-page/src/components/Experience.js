@@ -1,143 +1,61 @@
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { FaBriefcase } from "react-icons/fa";
-import { FaHourglassEnd } from "react-icons/fa";
-import { FaGraduationCap } from "react-icons/fa";
+import React, { useState } from "react";
+import { experiences } from "../data";
+import { motion } from "framer-motion";
 
 export default function Experience() {
+  const [selectedExperience, setSelectedExperience] = useState(null);
+
   return (
-    <section id="experience" className="bg-zinc-800">
-      <div className="h-5"></div>
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-300 text-center">
-        My Experience
-      </h1>
-      <div className="experience">
-        <VerticalTimeline lineColor="#9ca3af">
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaGraduationCap />}
-            date="Aug. 2021 - Dec. 2022"
-          >
-            <h3>Stony Brook University</h3>
-            <p>Bachelor of Science in Computer Science</p>
-            <ul>• Women in Science and Engineering (WISE) Honors Program</ul>
-            <ul>• Dean's List (All Semesters)</ul>
-            <ul>• Equestrian Team Competition Rider</ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaBriefcase />}
-            date="Jun. 2022 - Oct. 2022"
-          >
-            <h3>Coding Minds Academy</h3>
-            <p>Coding Instructor</p>
-            <ul>• Lead classes in Java, Python, and Flutter to students.</ul>
-            <ul>• Assigned homework.</ul>
-            <ul>• Monitored student progress.</ul>
-            <ul>
-              • Aided students in completion of a final project in the end of a
-              course.
-            </ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaBriefcase />}
-            date="Dec. 2022 - Apr. 2023"
-          >
-            <h3>Pure Match</h3>
-            <p>Mobile Frontend Developer Intern</p>
-            <ul>
-              • Utilized Dart and Flutter to maintain the application across the
-              App Store and Google Play Store.
-            </ul>
-            <ul>
-              • Met with team of 5 2x a week to discuss current progress and
-              future plans for growth.
-            </ul>
-            <ul>
-              • Implemented redesigned features to improve user experience
-              throughout the app.
-            </ul>
-            <ul>
-              • Supplied bug fixes and worked with other developers to produce
-              new features for users.
-            </ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaGraduationCap />}
-            date="Dec. 2022 - Present"
-          >
-            <h3>Adelphi University</h3>
-            <p>Bachelor of Science in Computer Science (GPA: 4.0)</p>
-            <ul>• Transferred from Stony Brook University</ul>
-            <ul>• Honors College</ul>
-            <ul>• Minor in Statistics and Data Analytics</ul>
-            <ul>• Deans List (All Semesters)</ul>
-            <ul>• Equestrian Team Competition Rider</ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaBriefcase />}
-            date="Jan. 2023 - Dec 2023"
-          >
-            <h3>Adelphi University</h3>
-            <p>Undergraduate TA (Math/CS Department)</p>
-            <ul>
-              • TA'ed for two courses across two semesters, CSC 171 and MTH 225
-              with a total of 60 students across both courses.
-            </ul>
-            <ul>
-              • Assisted professor in leading weekly laboratory classes for 30
-              students, offering individualized guidance on Python code
-              debugging and semester-long support.
-            </ul>
-            <ul>
-              • Swiftly graded and provided feedback for all students on a
-              weekly basis while collaborating with the professor for future
-              assignment plans.
-            </ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaBriefcase />}
-            date="June 2023 - Present"
-          >
-            <h3>North Atlantic Industries</h3>
-            <p>Software Engineer Intern</p>
-            <ul>
-              • Created an automated testing script and pipeline for the Vx
-              Works 6.9 and 7 SSK using Python and Jenkins. Tests the SSK
-              against both VSB and Image creation and compilation.
-            </ul>
-            <ul>
-              • Led the design and implementation of two full-stack
-              React/Tailwind applications, specifically tailored for in-house
-              AI-powered projects.
-            </ul>
-            <ul>
-              • Developed a pipelined parser for the SSK1 and SSK2 with Python
-              to populate an internal function database, containing function
-              names, return types, parameters, and function code with the use of
-              the pyodbc library.
-            </ul>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            iconStyle={{ background: "#9ca3af", color: "#fff" }}
-            icon={<FaHourglassEnd />}
-          ></VerticalTimelineElement>
-        </VerticalTimeline>
+    <section
+      id="experience"
+      className="bg-gradient-to-r from-purple-300 via-pink-200 to-red-200 py-10"
+      style={{ fontFamily: "'Montserrat', sans-serif" }}
+    >
+      <div className="container mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-800">
+            My Experience
+          </h1>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-700">
+            Take a walk down memory lane with me to see how far I've come! 📍
+          </p>
+        </div>
+        <div className="relative flex flex-col items-center">
+          <div className="absolute w-1 bg-gradient-to-b from-pink-300 via-pink-400 to-red-400 h-full left-1/2 transform -translate-x-1/2"></div>
+          {experiences.map((exp, index) => (
+            <motion.div
+              key={index}
+              className={`w-full max-w-3xl mb-8 flex ${
+                index % 2 === 0 ? "justify-start" : "justify-end"
+              } items-center relative`}
+              onClick={() => setSelectedExperience(index)}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <div
+                className={`absolute w-8 h-8 bg-white rounded-full border-2 border-gradient-to-b from-pink-400 to-red-400 flex items-center justify-center z-10 ${
+                  index % 2 === 0
+                    ? "left-1/2 -translate-x-1/2"
+                    : "right-1/2 translate-x-1/2"
+                }`}
+              >
+                <div className="bg-pink-400 w-4 h-4 rounded-full"></div>
+              </div>
+              <div
+                className={`bg-white p-6 rounded-lg shadow-lg w-5/12 ${
+                  index % 2 === 0 ? "ml-10 text-left" : "mr-10 text-right"
+                }`}
+              >
+                <h2 className="text-gray-800 text-lg font-bold">{exp.role}</h2>
+                <p className="text-sm text-gray-600">
+                  {exp.title} | {exp.date}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
